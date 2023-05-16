@@ -1,32 +1,17 @@
-# Prerequisites
-*.d
-
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
+//Codificado por: sAfOrAs
+//Código Fuente: Calcula cuantos números pares hay entre dos ingresados
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a=0,b=0,c=0;
+    cout<<"ingrese un numero: ";cin>>a;
+    cout<<"ingrese otro numero: ";cin>>b;
+    while(a<=b)
+    {
+        if(a%2!=0)
+        c=c+1; a=a+1;       
+    }
+    cout<<c<<endl;
+    cin.ignore(); return 0;
+}
